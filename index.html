@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+    <div class="container">
+        <header class="headbar top">
+            <h1>Contacts book</h1>
+        </header>
+        <div class="main">
+        <aside class="leftbar">
+            <div>
+                <fieldset>
+                    <label for="firstname"><span>First Name</span></label>
+                    <input type="text" placeholder="Enter First Name" id= "firstname">
+                </fieldset>
+                <fieldset>
+                    <label for="lastname"><span>Last Name</span></label>
+                    <input type="text" placeholder="Enter Last Name" id= "lastname">
+                </fieldset>
+                <fieldset>
+                    <label for="age"><span>Age</span></label>
+                    <input type="text" placeholder="Enter age" id= "age">
+                </fieldset>
+                <fieldset>
+                    <label for="pager"><span>Pager</span></label>
+                    <input type="text" placeholder="Enter pager" id= "pager">
+                </fieldset>
+                <fieldset>
+                    <label for="submit">&nbsp;</label>
+                    <button id="submit" onclick="onSavePressed()">Save</button>
+                    <button id="clear" onclick="onClearPressed()">Clear</button>
+                </fieldset>
+            </div>
+        </aside>
+        <aside class="rightbar">
+            <table id="regtable">
+                <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Pager</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tablerows">
+
+                </tbody>
+            </table>
+        </aside>
+    </div>
+       
+    </div>
+    <!-- <footer class="headbar bottom"></footer> -->
+<script src="script.js"></script>    
+</body>
+</html>
